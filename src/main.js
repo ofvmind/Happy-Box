@@ -189,7 +189,7 @@ modal.innerHTML = `
 <div class="modal-content">
 <h3 class="modal-text">developer: Zozulya V.V.</h3>
 <h3 class="modal-text">version App: 1.1.6</h3>
-<h3 class="modal-text">revision: 02.05.2023</h3>
+<h3 class="modal-text">revision: 27.05.2023</h3>
 </div>
 `;
 
