@@ -1,0 +1,252 @@
+.wrapper {
+    margin: auto;
+    max-width: 330px;
+    margin-top: 10px;
+}
+
+.field {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .8);
+    border-top: 2px solid #333;
+}
+
+.field:hover {
+  border-top: 2px solid darkcyan;
+}
+
+.inputs {
+    position: relative;
+    width: 250px;
+    padding: 10px 0 10px 0;
+    margin: auto;
+}
+
+.user {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+
+.user:hover {
+  outline: 1px solid darkcyan;
+}
+
+.text {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+
+.text:hover {
+  outline: 1px solid darkcyan;
+}
+
+.btn {
+  position: absolute;
+  display: none;
+  right: -55px;
+  bottom: 40px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-radius: 50%;
+  animation: show 150ms;
+}
+
+.hide-btn {
+  animation: close 150ms;
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+  }
+}
+
+.btn:hover {
+  outline: 1px solid darkcyan;
+}
+
+.chat {
+    margin-bottom: 180px;
+}
+
+.chatting {
+  margin-top: 210px;
+  text-align: center;
+  padding: 60px 30px 60px 30px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, .7);
+  animation: chatting 200ms;
+}
+
+@keyframes chatting {
+    0% {
+      opacity: .5;
+      transform: scale(0);
+    }
+}
+
+@keyframes chattingOn {
+  100% {
+    opacity: .5;
+    transform: scale(0);
+  }
+}
+
+.message {
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 25px;
+    background: rgba(0, 0, 0, .9);
+    margin: 45px 0 10px 0;
+    transition: 700ms;
+    animation: show 400ms;
+}
+
+.message-delete {
+    animation: close 400ms;
+}
+
+@keyframes close{
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0.5;
+        transform: scale(0);
+    }
+}
+
+.message:hover {
+    cursor: pointer;
+    outline: 4px solid darkcyan;
+}
+
+.userName {
+    outline: 1px solid darkcyan;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin: 0 100px 0 100px;
+    border-radius: 5px;
+}
+
+.textMessage {
+    max-width: 250px;
+    margin: 10px 0 10px 0;
+}
+
+.change {
+    background: transparent;
+    padding: 7px 0 7px 0;
+    margin: 5px 0 5px 0;
+    color: #fff;
+}
+
+.time {
+    text-align: center;
+}
+
+.empty {
+    background-color: darkcyan;
+    opacity: .1;
+}
+
+.loadDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0.5;
+        transform: scale(0);
+    }
+}  
+
+.load-ring {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 6px dashed #000;
+  animation: rotate 1s infinite linear;
+ }
+
+ @keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+ }
+
+  .delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0 8px 0 8px;
+    border-radius: 50%;
+    background: darkcyan;
+    cursor: pointer;
+  }
+
+  .delete-btn:hover {
+    background: red;
+  }
+
+  .delete-window {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(108, 160, 209, 0.1);
+    animation: show 200ms;
+  }
+
+  .delete-window-close {
+    animation: close 200ms;
+  }
+
+  .delete-window-content {
+    border-radius: 10px;
+    padding: 30px;
+    background: #000;
+  }
+
+  .window-btn {
+    padding: 5px;
+    background: #000;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+ 

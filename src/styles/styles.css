@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 99;
+    animation: open 400ms;
+  }
+  
+  .modal-close {
+    animation: modal-close 400ms;
+  }
+
+  @keyframes modal-close {
+      100% {
+        transform: scale(0);
+      }
+  }
+
+  @keyframes open {
+    0% {
+        opacity: 0.5;
+        transform: scale(0);
+    }
+  }
+  
+  .modal-content {
+    padding: 20px;
+    background: #000;
+    border-radius: 10px;
+    min-width: 250px;
+    background: rgba(0, 0, 0, .9);
+  }
+
+  .modal-themes-content {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    border-radius: 10px;
+    min-width: 250px;
+    background: rgba(0, 0, 0, .8);
+    padding: 10px;
+  }
+
+  .modal-text {
+    margin: 15px;
+    color: #fff;
+  }
+
+  select {
+    background-color: #000;
+    border-radius: 2px;
+    padding: 5px;
+    color: #fff;
+  }
+
+  select:hover {
+    background: darkcyan;
+  }
+
+.theme {
+    width: 100px;
+    border-radius: 10px;
+    margin: 5px;
+    transition: 200ms;
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  border-right: 1px solid #333;
+  padding: 10px 0;
+}
+
+.navItem:hover {
+  background-color: darkcyan;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    z-index: 99;
+}
+
+.navbar:hover {
+  border-top: 1px solid darkcyan;
+  border-bottom: 1px solid darkcyan;
+}
+
+.navbar-content {
+    display: grid;
+    width: 100vh;
+    grid-template-columns: repeat(8, 17vh);
+}
+
+.visit {
+  background: darkcyan;
+}
+
+.appeap {
+  animation: appearence 1000ms;
+}
+
+@keyframes appearence {
+  0% {
+    opacity: 0;
+  }
+}
+
+.dissap {
+  animation: dissapeared 1000ms;
+}
+
+@keyframes dissapeared {
+  100% {
+    opacity: 0;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

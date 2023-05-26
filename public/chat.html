@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="../src/styles/styles.css">
+    <link rel="stylesheet" href="../src/styles/chat.css">
+    <title>Happy box</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-content">
+            <a class="navItem" href="./towns.html">Міста України</a>
+            <a class="navItem visit" href="./chat.html">Чат</a>
+            <a class="navItem" href="./game.html">2048</a>
+            <a class="navItem" href="./testing.html">Тест</a>
+            <a class="navItem" href="./divination.html">Гадання</a>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="chat">
+            
+        </div>
+        <div class="field">
+            <div class="inputs">
+                <form action="/">
+                    <input name="user" class="user" type="text" placeholder="Ім'я користувача">
+                    <br />
+                    <textarea name="text" class="text" name="text" placeholder="Введіть ваше повідомлення"></textarea>
+                    <br />
+                    <button class="btn" name="send" type="submit"><img style="border-radius: 50%;" src="../src/styles/image/send.png" width="30px"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../src/main.js"></script>
+    <script src="../src/chat.js"></script>
+</body>
+</html>

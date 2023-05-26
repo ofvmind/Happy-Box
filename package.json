@@ -1,0 +1,14 @@
+{
+  "name": "massanger-app",
+  "version": "1.0.2",
+  "description": "educational=chat-app",
+  "main": "./src/script.js",
+  "scripts": {
+    "test": "chat"
+  },
+  "keywords": [
+    "chat"
+  ],
+  "author": "Vladimir Zozulya <reactorswins@ukr.net>",
+  "license": "ISC"
+}
