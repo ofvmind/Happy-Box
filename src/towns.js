@@ -69,8 +69,8 @@ towns.forEach(card => {
         const currentCard = e.currentTarget;
         const img = currentCard.querySelector('.present');
         img.style.transition = '200ms';
-        img.style.width = '180px';
-        currentCard.addEventListener('mouseout', e => img.style.width = '200px'); 
+        img.style.width = '70%';
+        currentCard.addEventListener('mouseout', e => img.style.width = '80%'); 
       });
 });
 

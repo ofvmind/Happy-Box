@@ -22,12 +22,13 @@
     background: rgba(0, 0, 0, .9);
 }
 
-.card > img {
-    border-radius: 10px;
-}
-
 .card > h2 {
     padding: 0 0 15px 0;
+}
+
+.present {
+    width: 80%;
+    border-radius: 10px;
 }
 
 #kharkiv {
@@ -158,4 +159,36 @@ li {
     background: rgba(0, 0, 0, .7);
     padding: 30px;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 870px) {
+
+    .towns {
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(3, 150px);
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .present {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    .towns {
+        grid-template-columns: repeat(3, 170px);
+        grid-template-rows: repeat(3, 120px);
+    }
+
+    .card {
+        padding: 7px;
+    }
+
+    .present {
+        width: 40%;
+    }
 }
