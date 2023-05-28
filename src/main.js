@@ -1,9 +1,9 @@
 const navbar = document.querySelector('.navbar-content');
-document.body.style.backgroundImage = `url(../src/styles/wallpers/wallper10.jpg)`;
+document.body.style.backgroundImage = `url(./src/styles/wallpers/wallper10.jpg)`;
 
 function click() {
     const audio = new Audio();
-    audio.src = '../src/sounds/click.mp3';
+    audio.src = './src/sounds/click.mp3';
     audio.autoplay = true;
 };
 
@@ -12,58 +12,58 @@ themesModal.classList.add('modal');
 themesModal.innerHTML = `
     <div class="modal-themes-content">
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper2.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper2.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper3.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper3.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper4.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper4.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper5.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper5.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper6.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper6.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper7.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper7.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper8.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper8.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper9.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper9.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper10.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper10.jpg" alt="not found" />
         </div>
         <div class="center">
             <img class="theme" id="n1" src="../src/styles/wallpers/wallper11.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper12.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper12.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper13.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper13.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper14.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper14.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper15.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper15.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper16.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper16.jpg" alt="not found" />
         </div>
         <div class="center">
             <img class="theme" id="n1" src="../src/styles/wallpers/wallper17.jpg" alt="not found" />
         </div>
         <div class="center">
-            <img class="theme" id="n1" src="../src/styles/wallpers/wallper18.jpg" alt="not found" />
+            <img class="theme" id="n1" src="./src/styles/wallpers/wallper18.jpg" alt="not found" />
         </div>
         
     </div>
@@ -148,22 +148,22 @@ selectMusic.onclick = () => {
     document.querySelector('.modal-content').addEventListener('click', e => e.stopPropagation());
     changeMusic.onchange = () => {
         if (rock.selected) {
-            backSound.src = '../src/sounds/rammstein.mp3';
+            backSound.src = './src/sounds/rammstein.mp3';
             backSound.loop = true;
         } else if (scwarz.selected) {
-            backSound.src = '../src/sounds/scwarz.mp3';
+            backSound.src = './src/sounds/scwarz.mp3';
             backSound.loop = true;
         } else if (heart.selected) {
-            backSound.src = '../src/sounds/MTheart.mp3';
+            backSound.src = './src/sounds/MTheart.mp3';
             backSound.loop = true;
         } else if (IchTuDirWeh.selected) {
-            backSound.src = '../src/sounds/IchTuDirWeh.mp3';
+            backSound.src = './src/sounds/IchTuDirWeh.mp3';
             backSound.loop = true;
         } else if (relax.selected) {
-            backSound.src = '../src/sounds/44.mp3';
+            backSound.src = './src/sounds/44.mp3';
             backSound.loop = true;
         } else if (memory.selected) {
-             backSound.src = '../src/sounds/33.mp3';
+             backSound.src = './src/sounds/33.mp3';
              backSound.loop = true;
         } else if (off.selected) backSound.src = null;
          

@@ -32,25 +32,25 @@ emptyMessage();
 
 function emptyField() {
     const audio = new Audio();
-    audio.src = '../src/sounds/empty.mp3';
+    audio.src = './src/sounds/empty.mp3';
     audio.autoplay = true;
 };
 
 function sendSound() {
     const audio = new Audio();
-    audio.src = '../src/sounds/send.mp3';
+    audio.src = './src/sounds/send.mp3';
     audio.autoplay = true;
 };
 
 function deleteSound() {
     const audio = new Audio();
-    audio.src = '../src/sounds/delete.mp3';
+    audio.src = './src/sounds/delete.mp3';
     audio.autoplay = true;
 };
 
 function keySound() {
     const audio = new Audio();
-    audio.src = '../src/sounds/keydown.mp3';
+    audio.src = './src/sounds/keydown.mp3';
     audio.autoplay = true;
 }
 

@@ -47,7 +47,7 @@ const undergroundOfKiev = [
 
 function click() {
     const audio = new Audio();
-    audio.src = '../src/sounds/click.mp3';
+    audio.src = './src/sounds/click.mp3';
     audio.autoplay = true;
 };
 

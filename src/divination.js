@@ -32,7 +32,7 @@ function offAudio(sound) {
 
 function clickSound() {
     const audio = new Audio();
-    audio.src = '../src/sounds/send.mp3';
+    audio.src = './src/sounds/send.mp3';
     audio.autoplay = true;
 };
 
@@ -94,13 +94,13 @@ love.onclick = () => {
             reset.style.visibility = 'hidden'
             girlScream.volume = 1;
             clickSound();
-            setTimeout(() => enableSound(appSound, '../src/sounds/heart.mp3'), 500);
+            setTimeout(() => enableSound(appSound, './src/sounds/heart.mp3'), 500);
             loveApp.classList.add('heart-way');
             question.replaceWith(heart);
             question.textContent = 'Спробувати ще';
             setTimeout(() => {
                 loveApp.classList.remove('heart-way');
-                enableSound(girlScream, '../src/sounds/girl.mp3');
+                enableSound(girlScream, './src/sounds/girl.mp3');
                 heart.replaceWith(question);
                 answer.textContent = loving();
                 reset.style.visibility = 'visible'
@@ -157,7 +157,7 @@ yesNo.onclick = () => {
     answer.onclick = () => {
         clickSound();
         if (answer.textContent === 'Так чи ні?') {
-            setTimeout(() =>enableSound(appSound, '../src/sounds/coin.mp3'), 150)
+            setTimeout(() =>enableSound(appSound, './src/sounds/coin.mp3'), 150)
             reset.style.visibility = 'hidden';
             answer.replaceWith(space);
             setTimeout(() => {
