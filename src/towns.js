@@ -68,7 +68,6 @@ towns.forEach(card => {
     card.addEventListener('mouseover', e => {
         const currentCard = e.currentTarget;
         const img = currentCard.querySelector('.present');
-        img.style.transition = '200ms';
         img.style.width = '70%';
         currentCard.addEventListener('mouseout', e => img.style.width = '80%'); 
       });

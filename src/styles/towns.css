@@ -29,6 +29,7 @@
 .present {
     width: 80%;
     border-radius: 10px;
+    transition: 200ms;
 }
 
 #kharkiv {
